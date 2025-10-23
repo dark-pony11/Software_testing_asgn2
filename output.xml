@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-10-23T08:15:13.648866" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\nurah\PycharmProjects\Software_testing_asgn2\tests">
+<suite id="s1-s1" name="Contact Page" source="C:\Users\nurah\PycharmProjects\Software_testing_asgn2\tests\contact_page.robot">
+<test id="s1-s1-t1" name="Navigate To Contact Page" line="6">
+<kw name="Open Browser To Practice Test" owner="common_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:13.827705" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-10-23T08:15:13.827958" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>executable_path=${CHROMEDRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-23T08:15:13.827463" elapsed="3.434036"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-23T08:15:17.261667" elapsed="0.020820"/>
+</kw>
+<status status="PASS" start="2025-10-23T08:15:13.826838" elapsed="3.455750"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:17.282953" level="INFO">Opening url 'https://practicetestautomation.com/'</msg>
+<arg>https://practicetestautomation.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-10-23T08:15:17.282835" elapsed="0.271499"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-23T08:15:17.554615" elapsed="0.508091"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'Practice')]</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-23T08:15:18.062916" elapsed="0.013687"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:18.076931" level="INFO">Clicking link 'xpath=//a[contains(text(),'Practice')]'.</msg>
+<arg>xpath=//a[contains(text(),'Practice')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T08:15:18.076788" elapsed="0.434499"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'Contact')]</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-23T08:15:18.511563" elapsed="0.011093"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:18.523011" level="INFO">Clicking link 'xpath=//a[contains(text(),'Contact')]'.</msg>
+<arg>xpath=//a[contains(text(),'Contact')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T08:15:18.522861" elapsed="3.376531"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Contact</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-23T08:15:21.899595" elapsed="0.008763"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-23T08:15:21.908655" elapsed="3.229247"/>
+</kw>
+<doc>Verify that user can open the Contact page from the Practice site.</doc>
+<status status="PASS" start="2025-10-23T08:15:13.826377" elapsed="11.312009"/>
+</test>
+<status status="PASS" start="2025-10-23T08:15:13.669952" elapsed="11.469455"/>
+</suite>
+<suite id="s1-s2" name="Invalid Login" source="C:\Users\nurah\PycharmProjects\Software_testing_asgn2\tests\invalid_login.robot">
+<test id="s1-s2-t1" name="Invalid Login" line="9">
+<kw name="Open Browser To Practice Test" owner="common_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:25.142926" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-10-23T08:15:25.143231" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>executable_path=${CHROMEDRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-23T08:15:25.142765" elapsed="2.138390"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-23T08:15:27.281324" elapsed="1.098018"/>
+</kw>
+<status status="PASS" start="2025-10-23T08:15:25.142595" elapsed="3.236838"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-23T08:15:28.379662" elapsed="0.012528"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:28.392618" level="INFO">Typing text 'wronguser' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${INVALID_USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T08:15:28.392407" elapsed="0.059082"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:28.451932" level="INFO">Typing text 'wrongpass' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${INVALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T08:15:28.451734" elapsed="0.064419"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:28.516711" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T08:15:28.516497" elapsed="0.046606"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your username is invalid!</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-23T08:15:28.563319" elapsed="0.008058"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-23T08:15:28.571660" elapsed="2.137156"/>
+</kw>
+<doc>Verify that an invalid username/password shows the correct error message.</doc>
+<status status="PASS" start="2025-10-23T08:15:25.142212" elapsed="5.566981"/>
+</test>
+<status status="PASS" start="2025-10-23T08:15:25.140486" elapsed="5.569122"/>
+</suite>
+<suite id="s1-s3" name="Logout Test" source="C:\Users\nurah\PycharmProjects\Software_testing_asgn2\tests\logout_test.robot">
+<test id="s1-s3-t1" name="Log Out" line="5">
+<kw name="Open Browser To Practice Test" owner="common_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:30.714858" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-10-23T08:15:30.715233" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>executable_path=${CHROMEDRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-23T08:15:30.714684" elapsed="2.152599"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-23T08:15:32.867427" elapsed="1.104679"/>
+</kw>
+<status status="PASS" start="2025-10-23T08:15:30.713527" elapsed="3.258827"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-23T08:15:33.972540" elapsed="0.013364"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:33.986321" level="INFO">Typing text 'student' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T08:15:33.986128" elapsed="0.056986"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:34.043691" level="INFO">Typing text 'Password123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T08:15:34.043449" elapsed="0.046232"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:34.090418" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T08:15:34.090044" elapsed="0.778391"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Logged In Successfully</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-23T08:15:34.868630" elapsed="0.024434"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:34.893482" level="INFO">Clicking link 'Log out'.</msg>
+<arg>Log out</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T08:15:34.893286" elapsed="0.188860"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-23T08:15:35.084424" elapsed="0.008362"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-23T08:15:35.093029" elapsed="2.116286"/>
+</kw>
+<doc>Verify that a logged-in user can log out successfully.</doc>
+<status status="PASS" start="2025-10-23T08:15:30.713134" elapsed="6.496611"/>
+</test>
+<status status="PASS" start="2025-10-23T08:15:30.710330" elapsed="6.500771"/>
+</suite>
+<suite id="s1-s4" name="Valid Login" source="C:\Users\nurah\PycharmProjects\Software_testing_asgn2\tests\valid_login.robot">
+<test id="s1-s4-t1" name="Valid Login" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:37.215590" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-23T08:15:37.215443" elapsed="3.348585"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:40.564408" level="INFO">Typing text 'student' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T08:15:40.564232" elapsed="0.077387"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:40.642048" level="INFO">Typing text 'Password123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T08:15:40.641838" elapsed="0.046720"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-23T08:15:40.688986" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T08:15:40.688822" elapsed="0.775937"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Logged In Successfully</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-23T08:15:41.470748" elapsed="0.009093"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-23T08:15:41.480044" elapsed="2.092943"/>
+</kw>
+<status status="PASS" start="2025-10-23T08:15:37.215185" elapsed="6.358646"/>
+</test>
+<status status="PASS" start="2025-10-23T08:15:37.212426" elapsed="6.362390"/>
+</suite>
+<status status="PASS" start="2025-10-23T08:15:13.650132" elapsed="29.927447"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="4" fail="0" skip="0">Tests</stat>
+<stat name="Contact Page" id="s1-s1" pass="1" fail="0" skip="0">Tests.Contact Page</stat>
+<stat name="Invalid Login" id="s1-s2" pass="1" fail="0" skip="0">Tests.Invalid Login</stat>
+<stat name="Logout Test" id="s1-s3" pass="1" fail="0" skip="0">Tests.Logout Test</stat>
+<stat name="Valid Login" id="s1-s4" pass="1" fail="0" skip="0">Tests.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-10-23T08:15:13.827705" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-10-23T08:15:25.142926" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-10-23T08:15:30.714858" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+</errors>
+</robot>
