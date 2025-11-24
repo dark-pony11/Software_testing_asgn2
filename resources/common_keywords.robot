@@ -11,11 +11,11 @@ ${BROWSERSTACK_USERNAME}    nurakhmetbaimakh_F9IEMR
 ${BROWSERSTACK_ACCESS_KEY}  7mhcJtKTXeo4txAied6W
 ${BROWSERSTACK_URL}         https://${BROWSERSTACK_USERNAME}:${BROWSERSTACK_ACCESS_KEY}@hub.browserstack.com/wd/hub
 
-${WIN_OS}                   Windows
-${WIN_OS_VERSION}           11
-${MAC_OS}                   OS X
-${MAC_OS_VERSION}           Sonoma
-${BUILD_NAME}               Homework 2 – Multi Browser
+${WIN_OS}           Windows
+${WIN_OS_VERSION}   11
+${MAC_OS}           OS X
+${MAC_OS_VERSION}   Sonoma
+${BUILD_NAME}       Homework 2 – Multi Browser
 
 *** Keywords ***
 Open Browser In BrowserStack
@@ -24,6 +24,7 @@ Open Browser In BrowserStack
     IF    '${browser}' == 'safari'
         &{caps}=    Create Dictionary
         ...    browserName=Safari
+        ...    browserVersion=17.0
         ...    os=${MAC_OS}
         ...    osVersion=${MAC_OS_VERSION}
         ...    build=${BUILD_NAME}
