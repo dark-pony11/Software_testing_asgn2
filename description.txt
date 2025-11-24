@@ -1,0 +1,10 @@
+I integrated my Robot Framework tests with BrowserStack using a remote WebDriver URL and custom capabilities.
+From Jenkins, the entire test suite was executed on Chrome and Firefox, and all tests successfully passed on both browsers.
+These runs appeared correctly in the BrowserStack Automate dashboard.
+
+I also attempted to run the same suite on Safari using macOS capabilities.
+However, BrowserStack returned a generic WebDriver “unhandled error” for Safari, and the sessions did not appear in the Automate dashboard.
+This is likely due to a capability mismatch or Safari limitations in the current BrowserStack plan.
+
+Because of this, only Chrome and Firefox runs were fully stable and validated through Jenkins.
+Safari execution was attempted and documented, but not completed successfully.
