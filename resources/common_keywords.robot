@@ -20,6 +20,7 @@ ${BUILD_NAME}               Homework 2 – Multi Browser
 *** Keywords ***
 Open Browser In BrowserStack
     [Arguments]    ${url}    ${browser}    ${test_name}
+
     IF    '${browser}' == 'safari'
         &{caps}=    Create Dictionary
         ...    browserName=Safari
@@ -35,12 +36,9 @@ Open Browser In BrowserStack
         ...    build=${BUILD_NAME}
         ...    name=${test_name}
     END
+
     Log To Console    REMOTE: ${BROWSERSTACK_URL} | BROWSER: ${browser}
     Open Browser    ${url}    ${browser}
     ...    remote_url=${BROWSERSTACK_URL}
     ...    desired_capabilities=${caps}
     Maximize Browser Window
-
-Open Browser To Practice Test
-    [Arguments]    ${test_name}=Practice Test
-    Open Browser In BrowserStack    ${URL}    ${BROWSER}    ${test_name}
